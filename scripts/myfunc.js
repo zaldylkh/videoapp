@@ -1,3 +1,4 @@
+$(document).on("ready", toggleMediaPlayer);
 function toggleMediaPlayer() {
 	$("#toggleMPlayer").on("click", function() {
 		var loadedClass = $("#content").attr('class');
