@@ -15,20 +15,36 @@
 	
 		<!-- SCRIPTS -->
 		<script src="scripts/jquery-1.11.1.min.js"></script>
-		<script type="text/javascript" src="scripts/ventanadeslizante.js"></script>
+		<script type="text/javascript" src="scripts/myfunc.js"></script>
 	</head>
 	<body>
+
 		<div id="wrapper">
 			<div id="header">
+				<div id="header-logo">
+					<img src="images/logo.png" width="100%" alt="Roarla Logo">
+				</div>
+				<div id="header-search">
+					
+					<div id="searchdiv">
+						<form action="#" method="post">
+						<input id="searchbox" type="text" placeholder="David Guetta, El reno renardo..." value="" >
+						<button id="searchbtn" type="submit"><img src="images/search.png"></button>
+						</form>
+					</div>
+				</div>
+				<div id="header-options"></div>
+			
+
+			</div>
+			<div id="content" class="content-large">
+				contenido
+			</div>
+			<div id="footer" class="content-small">
 				<button id="ocultar" value="Ocultar Ventana">Ocultar Reproductor</a>
 				<button id="mostrar" value="Mostrar Ventana">Mostrar Reproductor</a>
 			</div>
-			<div id="content">
-			
-			</div>
-			<div id="footer">
-			
-			</div>
 		</div>
+	
 	</body>
 </html>

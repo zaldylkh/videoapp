@@ -1,4 +1,4 @@
-/* IMPORTS */
+/*	IMPORTS	*/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800);
 
 
@@ -9,18 +9,53 @@ body {
 	font-family: "lucida grande", Tahoma, Verdana, Arial, Sans-serif;
 }
 
+/*	ESTRUCTURA	*/
+#wrapper {
+	clear:both;
+	width: 100%;
+	min-width: 1024px;
+	display: inline-block;
+}
+
 #header {
 	width: 100%;
 	height: 100px;
 	background-color: black;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+
 }
+
+	#header-logo {
+		width: 20%;
+		height: 50px;
+		float: left;
+		border-width: 0px;
+	}
+	#header-search {
+		width: 60%;
+		height: 50px;
+		float: left;
+		border-width: 0px;
+		vertical-align: middle;
+		text-align: center;
+	}
+	#header-options {
+		width: 20%;
+		height: 50px;
+		border-width: 0px;
+		float: left;
+	}
 
 #content {
 	position: absolute;
 	top: 100px;
-	left: 0px;
-	right: 0px;
+	bottom: 30px;
 	overflow: auto;
+		left: 0px;
+	right: 0px;
 }
 
 #footer {
@@ -42,7 +77,7 @@ body {
 }
 .content-small {
 	bottom: 90px;
-	background-color: red;
+	background-color: yellow;
 	-webkit-transition:bottom 0.4s;
 	-moz-transition:bottom 0.4s;
 	-ms-transition:bottom 0.4s;
@@ -63,5 +98,37 @@ body {
 	-moz-transition:height 0.4s;
 	-ms-transition:height 0.4s;
 	transition:height 0.4s;
+}
+#searchdiv {
+	width: 80%;
+	background-color: blue;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+}
 
+/*	ITEMS	*/
+#searchbox {
+	font-size: 18px;
+	width:80%;
+	height: 39px; 
+	border-top-left-radius: 5px;	
+	border-bottom-left-radius: 5px;
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	padding-left: 5px;
+	vertical-align: middle;
+	float: left;
+
+}
+#searchbtn {
+	float: left;
+	height: 43px;
+	border-width: 1px;
+	border-left: 0px;
+	border-style: solid;
+	border-color: gray;
+	border-top-right-radius: 5px;	
+	border-bottom-right-radius: 5px;
 }

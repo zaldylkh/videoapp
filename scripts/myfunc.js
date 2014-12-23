@@ -1,15 +1,24 @@
-function showPlayer() {
-	$("#abrir").on("click", function(){
-		$(".content1").addClass("content2");
-		$(".content1").removeClass("content1");
-		$(".footer").addClass("footer2");
-		$(".footer").removeClass("footer");
+$(document).on("ready", toggleMediaPlayer);
+function toggleMediaPlayer() {
+
+	$("#content").addClass("content-large");
+	$("#content").removeClass("content-small");
+	$("#footer").addClass("footer-small");
+	$("#footer").removeClass("footer-large");
+
+	$("#mostrar").on("click", function(){
+		$("#content").addClass("content-small");
+		$("#content").removeClass("content-large");
+		$("#footer").addClass("footer-large");
+		$("#footer").removeClass("footer-small");
 	});
 
 	$("#ocultar").on("click", function(){
-		$(".content2").addClass("content1");
-		$(".content2").removeClass("content2");
-		$(".footer2").addClass("footer");
-		$(".footer2").removeClass("footer2");
+		$("#content").addClass("content-large");
+		$("#content").removeClass("content-small");
+		$("#footer").addClass("footer-small");
+		$("#footer").removeClass("footer-large");
+		
+
 	});
 }
