@@ -132,3 +132,9 @@ body {
 	border-top-right-radius: 5px;	
 	border-bottom-right-radius: 5px;
 }
+
+.sombreado {
+    -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.5);
+    -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.5);
+    box-shadow: inset 0 2px 4px rgba(0,0,0,.5);
+}
