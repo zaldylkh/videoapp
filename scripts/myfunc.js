@@ -40,9 +40,16 @@ function loadVideos(){
                     $.getJSON("http://gdata.youtube.com/feeds/api/videos?q="+tag+"&caption&v=2&alt=json", function(datos){
 
                             $.each(datos.feed.entry, function(i, item){
-                                texto +="<div class='cuadro'>";
-                                texto += "<embed src="+item.content.src+">";
-                                texto +="<p id='letra'>"+item.title.$t+"</p>";
+                                texto +="<div class='cuadro' style='border: solid 2px red; width:100%;'>";
+                                
+	                                texto +="<div class='cuadro_imagen' style='border: solid 2px green; float:left;'>";
+	                                texto += "<img src="+item.media$group.media$thumbnail[1].url+" class='img_video_size'>";
+	                                texto += "</div>";
+
+	                                texto += "<div class='cuadro_imagen_description' style='border: solid 2px green; float:left;'>";
+	                                texto += "<p id='letra'>"+item.title.$t+"</p>";
+	                                texto += "</div>";
+                                
                                 //texto +="<div>"+item.description+"</div>";
                                 texto +="</div>";
 
@@ -54,4 +61,9 @@ function loadVideos(){
                 });
                 
             
+}
+
+function mostPopular() {
+
+
 }

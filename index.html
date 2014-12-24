@@ -22,30 +22,34 @@
 	</head>
 	<body>
 		<div id="wrapper">
+		
 			<div id="header">
 				<div id="header-logo">
 					<img src="images/logo.png" width="100%" alt="Roarla Logo">
 				</div>
 				<div id="header-search">
 					<div id="searchdiv">
-						<input id="searchbox" class="sombreado" type="text" placeholder="David Guetta, El reno renardo..." value="" >
-						<button id="searchbtn" type="submit"><img src="images/search.png"></button>
+						<form action="#" onsubmit="return loadVideos();" >
+							<input id="searchbox" class="sombreado" type="text" placeholder="David Guetta, El reno renardo..." value="" >
+							<button id="searchbtn" type="submit"><img src="images/search.png"></button>
+						</form>
 					</div>
 				</div>
 				<div id="header-options"></div>
-			
-
 			</div>
+			
 			<div id="content" class="content-large">
-				<div id="content_music">
-					<div id="content_music_title">Resultado de la busqueda - "Busqueda"</div>
+				<div id="content_music" class="sombreado">
+					<div id="content_music_title">¡Los videos mas populares de la red!</div>
 					<div id="content_music_list"></div>
 					<div id="content_music_related"></div>
 				</div>
 			</div>
+			
 			<div id="footer" class="footer-small">
 				<button id="toggleMPlayer" value="">Maximizar</a>
 			</div>
+			
 		</div>
 
 	</body>
