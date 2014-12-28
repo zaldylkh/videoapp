@@ -52,10 +52,12 @@ body {
 #content {
 	position: absolute;
 	top: 100px;
-	bottom: 30px;
 	overflow: auto;
-		left: 0px;
+	left: 0px;
 	right: 0px;
+	z-index:0;
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat-x;
 }
 
 #footer {
@@ -64,13 +66,12 @@ body {
 	position: absolute;
 	bottom: 0;
 	left: 0;
-
+	z-index:0;
 }
 
 
 .content-large{
 	bottom: 30px;
-	background-color: yellow;
 	-webkit-transition:bottom 0.4s;
 	-moz-transition:bottom 0.4s;
 	-ms-transition:bottom 0.4s;
@@ -78,7 +79,6 @@ body {
 }
 .content-small {
 	bottom: 90px;
-	background-color: yellow;
 	-webkit-transition:bottom 0.4s;
 	-moz-transition:bottom 0.4s;
 	-ms-transition:bottom 0.4s;
@@ -89,6 +89,8 @@ body {
 	width: 1000px;
 	border: solid 2px;
 	margin: 0 auto;
+	overflow: hidden; 
+	background-color: yellow;
 
 }
 
@@ -109,6 +111,7 @@ body {
 	width: 60%;
 	height: 100%;
 	border: solid 2px green;
+	overflow: hidden;
 }
 
 .footer-large {
@@ -165,6 +168,11 @@ body {
     -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.5);
     -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.5);
     box-shadow: inset 0 2px 4px rgba(0,0,0,.5);
+}
+
+.img_video_size{
+	width: 150px;
+	height: 100px;
 }
 
 
