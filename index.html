@@ -15,29 +15,30 @@
 	
 		<!-- SCRIPTS -->
 		<script src="scripts/jquery-1.11.1.min.js"></script>
-		<script type="text/javascript" src="scripts/myfunc.js"></script>
+		
 				
 		<script src="scripts/jquery.snow.min.js"></script>
-		
+		<script type="text/javascript" src="scripts/myfunc.js"></script>
 	</head>
 	<body>
 		<div id="wrapper">
-		
 			<div id="header">
 				<div id="header-logo">
 					<img src="images/logo.png" width="100%" alt="Roarla Logo">
 				</div>
+		
 				<div id="header-search">
 					<div id="searchdiv">
-						<form action="#" onsubmit="return loadVideos();" >
-							<input id="searchbox" class="sombreado" type="text" placeholder="David Guetta, El reno renardo..." value="" >
-							<button id="searchbtn" type="submit"><img src="images/search.png"></button>
+						<form onsubmit="return loadVideos();" action="#">
+						<input id="searchbox" class="sombreado" type="text" placeholder="David Guetta, El reno renardo..." value="" >
+						<button id="searchbtn" type="submit"><img src="images/search.png"></button>
 						</form>
 					</div>
 				</div>
 				<div id="header-options"></div>
-			</div>
 			
+
+			</div>
 			<div id="content" class="content-large">
 				<div id="content_music" class="sombreado">
 					<div id="content_music_title">¡Los videos mas populares de la red!</div>
@@ -45,11 +46,10 @@
 					<div id="content_music_related"></div>
 				</div>
 			</div>
-			
 			<div id="footer" class="footer-small">
-				<button id="toggleMPlayer" value="">Maximizar</a>
+				<button id="toggleMPlayer" value="">Maximizar</button>
+				<div id="player">Texto lipsum</div>	
 			</div>
-			
 		</div>
 
 	</body>

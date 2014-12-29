@@ -60,16 +60,6 @@ body {
 	background-repeat: no-repeat-x;
 }
 
-#footer {
-	width: 100%;
-	background-color: gray;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	z-index:0;
-}
-
-
 .content-large{
 	bottom: 30px;
 	-webkit-transition:bottom 0.4s;
@@ -91,6 +81,8 @@ body {
 	margin: 0 auto;
 	overflow: hidden; 
 	background-color: yellow;
+	margin-bottom: 30px;
+	margin-top: 30px;
 
 }
 
@@ -112,6 +104,16 @@ body {
 	height: 100%;
 	border: solid 2px green;
 	overflow: hidden;
+}
+
+
+#footer {
+	width: 100%;
+	background-color: gray;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index:0;
 }
 
 .footer-large {
@@ -154,7 +156,7 @@ body {
 
 }
 #searchbtn {
-	float: left;
+	float: 	left;
 	height: 43px;
 	border-width: 1px;
 	border-left: 0px;
@@ -165,24 +167,46 @@ body {
 }
 
 .sombreado {
-    -moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.5);
+    -moz-box-shadow: 	inset 0 2px 4px rgba(0,0,0,.5);
     -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.5);
-    box-shadow: inset 0 2px 4px rgba(0,0,0,.5);
+    box-shadow: 		inset 0 2px 4px rgba(0,0,0,.5);
 }
 
 .img_video_size{
-	width: 150px;
-	height: 100px;
+	width: 			150px;
+	height: 		100px;
 }
 
 
+/* 	MUSIC ROWS 	*/ 
 
+.row_music {
+	clear: 			both;
+	vertical-align: top;
+    text-align: 	left;
+	width:			100%;
+	overflow:		visible;
+	margin-bottom:	2px;
 
-/*Contenido Prueba*/
+}
 
-.cuadro{
-		clear: both;
-		vertical-align: top;
-		width: 300px;
-        text-align: center;
+.cover_song {
+	float:			left;
+	width: 			75px;
+	padding:		5px;
+	border:			solid 1px blue;
+	overflow:		hidden;
+}
+.cover_image {
+	width: 			75px;
+}
+
+.cover_title {
+	border: 		solid 2px red;
+	font-size:		16px;
+	padding: 		5px;
+}
+.video-player {
+	height: 		100px;
+
 }
