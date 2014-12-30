@@ -51,6 +51,7 @@ body {
 
 #content {
 	position: absolute;
+	color:white;
 	top: 100px;
 	overflow: auto;
 	left: 0px;
@@ -80,7 +81,7 @@ body {
 	border: solid 2px;
 	margin: 0 auto;
 	overflow: hidden; 
-	background-color: yellow;
+	background-color: rgba(60,60,60, 0.5);;
 	margin-bottom: 30px;
 	margin-top: 30px;
 
@@ -117,7 +118,7 @@ body {
 }
 
 .footer-large {
-	height: 90px;
+	height: 250px;
 	
 	-webkit-transition:height 0.4s;
 	-moz-transition:height 0.4s;
@@ -207,6 +208,15 @@ body {
 	padding: 		5px;
 }
 .video-player {
-	height: 		100px;
+	height: 		200px;
+	padding-top: 5px;
+	padding-left:25px;
 
+}
+/*media query adaptacion a movil prueba*/
+@media (max-width:1000px){
+    div{ width: 50%; }
+}
+@media (max-width: 992px){
+    div{ width: 25%; }
 }
