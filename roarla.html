@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="grilla">
+		<meta name="author" content="Ares, Guillermo, Diana">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href="imgs/favicon.ico" type="image/x-icon" />
+		
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css_estilos/estilos_web.css">
+        <title>ROARLA Streaming Multimedia</title>
+				
+		<!-- JS -->
+		
+		
+		<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/functionsBootstrap.js"></script>
+
+		<script src="js/class/class.youtube.js"></script>
+		<script src="js/class/class.data.js"></script>
+		<script type="text/javascript" src="js/class/class.musicrecommender.js"></script>
+		<script src="js/class/class.player.js"></script>
+		<script src="js/func.js"></script>
+		
+		
+
+
+	</head>
+   <body>
+
+   		<div id="content_logo" class="container-fluid" style="height:40%;">
+   			<div class="row" style="background-image: -webkit-linear-gradient(top, #3c3c3c, #2c2c2c);">
+   				
+   				<div class="hidden-xs col-lg-2 text-right" style="height:75px;">
+   					<img id="logo" src="logo.png" alt="Roarla Logo">
+   				</div>
+
+              <div class="col-xs-12 col-lg-10 text-center">
+                <div class="input-group buscadorHeader" >
+                  <input id="busqueda" type="text" class="form-control">
+                  <span class="input-group-btn">
+                    <button id="searchbtn" class="btn btn-default" type="button">Buscar</button>
+                    <button id="options" value="song" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    Song <span class="caret"></span>
+                    </button>
+   
+                    <ul class="dropdown-menu" role="menu">
+                      <li><a href="#" onclick="selectedOption('artist')">Artist</a></li>
+                      <li><a href="#" onclick="selectedOption('album')">Album</a></li>
+                      <li><a href="#" onclick="selectedOption('song')">Song</a></li>
+                    </ul>
+                  </span>
+                </div>
+              </div>
+
+
+   				</div>
+   			</div>
+   		</div>
+   		<div id="content_body" class="container-fluid row_centered">
+                <div id="pop" class="panel-title text-center">
+
+                </div>
+        </div>
+
+        <div id="futer" class="footer-small">
+
+        		<div id="buttonmenu" style="clear: both;">
+				
+						<ul>
+							<li><input type="image" class="icsmall" id="toggleMPlayer" src="imgs/hide.png" border='0px' /></input></li>
+							<li><input type="image" class="icsmall" src="imgs/playedsongs.png" onclick="database.get(verReproduccionesUsuario)"></input></li>
+							<li><a href="#" onclick="player.loadPrev()"><img class="icsmall" src="imgs/prev.png"></a></li>
+							<li><a href="#" onclick="player.loadNext()"><img class="icsmall" src="imgs/next.png"></a></li>
+						</ul>
+				</div>
+				<div id="player">
+				
+				</div>
+				<div id="playlist">
+		
+				</div>
+				<div class="container-fluid well" id="musicrecomender">
+					
+				    <div id="results" style="color:black;">Sugerencias</div>
+
+				</div>
+			
+		</div>
+
+   </body>
+
+</html>  
